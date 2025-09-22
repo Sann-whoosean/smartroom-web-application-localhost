@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Suhu & Kelembaban</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body>
+  <div id="logo-bar">
+    <img src="./static/img/antares.png" alt="logoAntares">
+    <img src="./static/img/telkom.png" alt="logoTelkom">
+    <img src="./static/img/kidiiot.png" alt="KidiIoT">
+    <img src="./static/img/smkbisa.png" alt="SmkBisa">
+  </div>
+
+  <h1>Dashboard IoT - SmartRoom</h1>
+  <div class="cardSensor">
+    <h1 class="h1card">Monitoring</h1>
+    <div class="card">
+      <h2>Temperature (°C)</h2>
+      <div id="temperature" class="value">--</div>
+    </div>
+
+    <div class="card">
+      <h2>Humidity (%)</h2>
+      <div id="humidity" class="value">--</div>
+    </div>
+  </div>
+
+  <div class="cardControl">
+    <h1 class="h1card">Controling</h1>
+    <div class="card">
+      <h2>Status Relay</h2>
+      <div id="relayStatus" class="value">--</div>
+      <button onclick="setRelay('ON')">ON</button>
+      <button onclick="setRelay('OFF')">OFF</button>
+    </div>
+  </div>
+
+  <script src="./static/js/script.js"></script>
+</body>
+
+</html>
